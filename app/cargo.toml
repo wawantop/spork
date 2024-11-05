@@ -1,0 +1,10 @@
+[package]
+name = "cloud_storage"
+version = "0.1.0"
+edition = "2023"
+
+[dependencies]
+ic-cdk = { version = "0.8" }
+wasm-bindgen = "0.2"
+serde = { version = "5.0", features = ["derive"] }
+serde_json = "5.0"
