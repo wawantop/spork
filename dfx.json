@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "cloud_storage": {
+      "type": "rust",
+      "main": "src/cloud_storage.rs",
+      "dependencies": []
+    }
+  },
+  "dfx_version": "0.20.0",
+  "network": "ic",
+  "defaults": {
+    "build": {
+      "packtool": "rust"
+    }
+  }
+}
+￼Enter
