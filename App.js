@@ -40,3 +40,11 @@ async function getFileMetadata() {
     document.getElementById('fileMetadata').textContent = 'File not found!';
   }
 }
+async function loadWasm() {
+  const wasm = await WebAssembly.instantiateStreaming(fetch('cloud_storage.wasm'));
+  const { upload_file } = wasm.instance.exports;
+
+  // Menggunakan fungsi WASM untuk meng-upload file
+  upload_file('example.txt', 1024, '2024-11-05');
+}
+loadWasm();
